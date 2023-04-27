@@ -16,6 +16,7 @@ enum TestQueue {
 const sqs = new SQSClient({
   apiVersion: '2012-11-05',
   credentials: { accessKeyId: 'x', secretAccessKey: 'x' },
+  endpoint: SQS_ENDPOINT,
   region: 'none',
 });
 
